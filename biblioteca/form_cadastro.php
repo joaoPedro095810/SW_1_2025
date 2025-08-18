@@ -12,24 +12,27 @@
     ?>
     <h2>Formulario para cadastro de livro</h2>
     <div class="container">
-    <form>
+    <form action="inserir.php" method="POST">
         <div class="mb-3">
-            <input placeholder="Digite o título do livro " type="text" class="form-control">
+            <input placeholder="Digite o título do livro... " type="text" class="form-control" name="titulo">
         </div>
         <div class="mb-3">
-            <input placeholder="Digite o título do livro " type="text" class="form-control">
+            <input placeholder="Digite o genero do livro... " type="text" class="form-control" name="genero">
         </div>
         <div class="mb-3">
-            <input placeholder="Digite o título do livro " type="text" class="form-control">
+            <input placeholder="Digite o autor do livro... " type="text" class="form-control" name="autor" >
         </div>
         <div class="mb-3">
-            <input placeholder="Digite o título do livro " type="text" class="form-control">
+            <input placeholder="Digite o ano de lançamento do livro... " type="text" class="form-control" name="ano">
         </div>
         <div class="mb-3">
-            <input placeholder="Digite quantidade de páginas do Livro " type="text" class="form-control">
+            <input placeholder="Digite quantidade de páginas do Livro... " type="text" class="form-control" name="paginas">
         </div>
         <a href="index.php" type="button" class="btn btn-danger">Voltar</a>
-        <a href="pedaco.pho" type="button" class="btn btn-danger">Cadastrar</a>
+
+        <button type="submit" class="btn btn-danger">Cadastrar</button>
+
+        
     </form>
 
 

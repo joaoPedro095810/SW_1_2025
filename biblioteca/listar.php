@@ -25,6 +25,30 @@
                 </tr>
             </thead>
             <tbody>
+
+            <?php
+                include_once 'pedaco.php';
+                require_once 'conexao.php';
+                $sql ="SELECT * FROM produtos";
+                $stmt = $pdo->query(sql);
+                while ($produto = $stmt->fetch(PDO:FETCH_ASSOC0)) {
+
+                    echo "<tr>";
+                    echo  "<th scope='row'>".$livro['id']."</th>";
+                    echo  "<td>".$livro['titulo']."</td>"
+                    echo  "<td>".$livro['genero']."</td>"
+                    echo  "<td>".$livro['autor']."</td>"
+                    echo  "<td>".$livro['ano']."</td>"
+                    echo  "<td>".$livro['paginas']."</td>"
+
+                    echo "ID:" . $livro['id'] . "br";
+                    echo "nome:" . $livro['nome'] . "br";
+                    echo "Preço: R$" . $livro['preco'] . "br";
+                    echo "Esotoque:" . $livro['estoque'] . "<br><br>";
+
+                    echo "</tr>";
+                }
+            ?>
                 <tr>
                     <th scope="row">1</th>
                     <td>DOM CASMURRO</td>
